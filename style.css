@@ -1,0 +1,107 @@
+
+/* =================================
+   SpendWise - Budget Tracker
+   Student Name: Eric
+   ================================= */
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    color: #dce8f2;
+}
+
+/* Main dashboard */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #173b57;
+    font-size: 28px;
+}
+
+/* Dashboard cards */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.budget-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #20a477;
+    transition: transform 0.3s ease;
+}
+
+.budget-card:hover {
+    transform: translateY(-5px);
+}
+
+.budget-card h3 {
+    color: #173b57;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.budget-card p {
+    color: #667788;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+}
